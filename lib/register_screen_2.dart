@@ -1,18 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class RegisterScreen2 extends StatefulWidget {
+  const RegisterScreen2({super.key});
 
-  static const route = '/LoginScreen';
+  static const route = '/RegisterScreen2';
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<RegisterScreen2> createState() => _RegisterScreen2State();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passController = TextEditingController();
+class _RegisterScreen2State extends State<RegisterScreen2> {
+  final TextEditingController _usernameController = TextEditingController();
+
+  @override
+  void dispose() {
+    _usernameController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 bottom: 30,
               ),
               child: const Text(
-                'Log in',
+                'Register',
                 style: TextStyle(
                   fontFamily: 'Comfortaa',
                   fontSize: 36,
@@ -49,8 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 52,
               child: CupertinoTextField(
-                controller: _emailController,
-                autocorrect: false,
+                controller: _usernameController,
                 placeholder: 'Email Address',
                 keyboardType: TextInputType.emailAddress,
                 textAlignVertical: TextAlignVertical.center,
@@ -63,23 +67,8 @@ class _LoginScreenState extends State<LoginScreen> {
             Container(
               height: 52,
               margin: const EdgeInsets.only(
-                top: 20,
-                bottom: 30,
+                top: 30,
               ),
-              child: CupertinoTextField(
-                controller: _passController,
-                autocorrect: false,
-                placeholder: 'Password',
-                obscureText: true,
-                textAlignVertical: TextAlignVertical.center,
-                padding: const EdgeInsets.only(left: 15),
-                decoration: BoxDecoration(
-                  border: Border.all(color: CupertinoColors.black, width: 2),
-                ),
-              ),
-            ),
-            Container(
-              height: 52,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
@@ -91,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 onPressed: () {},
                 child: const Text(
-                  'LOG IN',
+                  'SIGN UP',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontFamily: 'Roboto',
