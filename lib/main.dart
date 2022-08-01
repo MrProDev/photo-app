@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:photo/logged_out_screen.dart';
 import 'package:photo/login_screen.dart';
-import 'package:photo/register_screen.dart';
+import 'package:photo/register_screen_1.dart';
+import 'package:photo/register_screen_2.dart';
 import 'package:photo/splash_screen.dart';
 
 void main(List<String> args) {
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
           '/': (p0) => const SplashScreen(),
           LoggedOutScreen.route: (p0) => const LoggedOutScreen(),
           LoginScreen.route:(p0) => const LoginScreen(),
-          RegisterScreen.route:(p0) => const RegisterScreen(),
+          RegisterScreen1.route:(p0) => const RegisterScreen1(),
+          RegisterScreen2.route:(p0) => const RegisterScreen2(),
         },
         initialRoute: '/',
       ),

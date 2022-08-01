@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:photo/login_screen.dart';
-import 'package:photo/register_screen.dart';
+import 'package:photo/register_screen_1.dart';
 
 class LoggedOutScreen extends StatelessWidget {
   const LoggedOutScreen({super.key});
@@ -75,7 +75,7 @@ class LoggedOutScreen extends StatelessWidget {
                       foregroundColor: CupertinoColors.white,
                       backgroundColor: CupertinoColors.black,
                     ),
-                    onPressed: () => Navigator.pushNamed(context, RegisterScreen.route),
+                    onPressed: () => Navigator.pushNamed(context, RegisterScreen1.route),
                     child: const Text(
                       'REGISTER',
                       style: TextStyle(

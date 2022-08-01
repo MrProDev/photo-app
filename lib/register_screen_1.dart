@@ -1,16 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:photo/register_screen_2.dart';
 
-class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({super.key});
+class RegisterScreen1 extends StatefulWidget {
+  const RegisterScreen1({super.key});
 
-  static const route = '/RegisterScreen';
+  static const route = '/RegisterScreen1';
 
   @override
-  State<RegisterScreen> createState() => _RegisterScreenState();
+  State<RegisterScreen1> createState() => _RegisterScreen1State();
 }
 
-class _RegisterScreenState extends State<RegisterScreen> {
+class _RegisterScreen1State extends State<RegisterScreen1> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passController = TextEditingController();
 
@@ -33,13 +34,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [ 
-            CupertinoButton(
-              padding: EdgeInsets.zero,
+            GestureDetector(
               child: Image.asset(
                 'assets/Icons/back.png',
                 color: CupertinoColors.black,
               ),
-              onPressed: () => Navigator.pop(context),
+              onTap: () => Navigator.pop(context),
             ),
             Container(
               margin: const EdgeInsets.only(
@@ -95,7 +95,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   foregroundColor: CupertinoColors.white,
                   backgroundColor: CupertinoColors.black,
                 ),
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, RegisterScreen2.route),
                 child: const Text(
                   'NEXT',
                   style: TextStyle(
