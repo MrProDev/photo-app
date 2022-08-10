@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "546854736121",
+    "project_id": "itour-planner",
+    "storage_bucket": "itour-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546854736121:android:f6db6bf9f0a48bea6a9228",
+        "android_client_info": {
+          "package_name": "com.example.itour_planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546854736121-2ooec6pjof579dnkg5ptjgchvi58gmij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00NgVKG_WhhVBnWzPW0pJzbUhyMmeNyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546854736121-2ooec6pjof579dnkg5ptjgchvi58gmij.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "546854736121-c8cc34k0c0pbifu46ijl0312cfvud54m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.itourPlanner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
